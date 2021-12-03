@@ -1,5 +1,10 @@
 package com.example.quizapp
 
+import eu.tutorials.quizapp.R
+import java.util.*
+import kotlin.collections.ArrayList
+
+
 object Constants {
     val USER_NAME: String = "user_name"
     val TOTAL_QUESTIONS: String = "total_questions"
@@ -7,7 +12,7 @@ object Constants {
 
     fun getQuestions(): ArrayList<Question> {
 
-        val questionsList = ArrayList<Question>()
+        var questionsList = ArrayList<Question>()
 
         // 1
         val que1 = Question(
@@ -109,7 +114,35 @@ object Constants {
 
         questionsList.add(que10)
 
+
+        val que11 = Question(
+            11, "What country does this flag belong to?",
+            R.drawable.ic_flag_of_unitedkingdom,
+            "United Kingdom", "New Zealand",
+            "Switzerland", "Australia", 1
+        )
+
+        questionsList.add(que11)
+
+
+        val que12 = Question(
+            12, "What character is this",
+            R.drawable.ic_flag_of_unitedkingdom,
+            "United Kingdom", "New Zealand",
+            "Switzerland", "Australia", 1
+        )
+
+        questionsList.add(que12)
+
+
+        // END of Questions
+        Collections.shuffle(questionsList)
+
         return questionsList
+
     }
+
+
     // END
+
 }
