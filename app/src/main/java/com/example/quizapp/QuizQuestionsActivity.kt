@@ -32,6 +32,7 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
     private var mSelectedOptionPosition: Int = 0
 
     private var count = 0
+    private var maxNumQues = 10
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -80,7 +81,7 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
             buttonSubmit?.text = "SUBMIT"
         }
         progressBar?.progress = count // Setting the current progress in the progressbar using the position of question
-        tvProgress?.text = "$count" + "/" + progressBar?.max // Setting up the progress text
+        tvProgress?.text = "$count" + "/" + maxNumQues // Setting up the progress text
 
         // Now set the current question and the options in the UI
         tvQuestion?.text = question.question

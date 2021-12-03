@@ -56,10 +56,10 @@ object Constants {
 
         // 5
         val que5 = Question(
-            5, "What country does this flag belong to?",
-            R.drawable.ic_flag_of_fiji,
-            "Gabon", "France",
-            "Fiji", "Finland", 3
+            5, "What brand is this icon from?",
+            R.drawable.nike,
+            "Checkers", "Checkmate",
+            "Nike", "None of the above", 3
         )
 
         questionsList.add(que5)
@@ -133,6 +133,87 @@ object Constants {
         )
 
         questionsList.add(que12)
+
+
+        val que13 = Question(
+            13, "What game is this character from?",
+            R.drawable.kirby,
+            "Pokemon", "Kirby",
+            "Super Smash Bros", "Sonic", (2 or 3)
+        )
+
+        questionsList.add(que13)
+
+
+        val que14 = Question(
+            14, "What game is this character from?",
+            R.drawable.poro,
+            "League of Legends", "Kirby",
+            "Pokemon", "Sonic", 1
+        )
+
+        questionsList.add(que14)
+
+
+        val que15 = Question(
+            15, "Who is this character?",
+            R.drawable.poroking,
+            "Sonic", "Kirby",
+            "Pikachu", "Poro King", 4
+        )
+
+        questionsList.add(que15)
+
+
+        val que16 = Question(
+            16, "Who is this character?",
+            R.drawable.pinkbean,
+            "Sonic", "Kirby",
+            "Pink Pikachu", "Pink Bean", 4
+        )
+
+        questionsList.add(que16)
+
+
+        val que17 = Question(
+            17, "Who is this character?",
+            R.drawable.fallguys,
+            "Eggie", "Varus",
+            "Fall Guys", "Maplestory", 3
+        )
+
+        questionsList.add(que17)
+
+
+        val que18 = Question(
+            18, "What game is this character from?",
+            R.drawable.amongus,
+            "League of Legends", "Among Us",
+            "Risk of Rain", "Super Smash Bros", 2
+        )
+
+        questionsList.add(que18)
+
+
+        val que19 = Question(
+            19, "Where is this icon from?",
+            R.drawable.disney,
+            "Pokemon", "Disney",
+            "Starcraft", "Nickelodeon", 2
+        )
+
+        questionsList.add(que19)
+
+
+        val que20 = Question(
+            20, "Where is this icon from?",
+            R.drawable.mikey,
+            "Mulan", "Mickey Mouse",
+            "Disney", "Super Smash Bros", 2 or 3
+        )
+
+        questionsList.add(que20)
+
 
 
         // END of Questions
